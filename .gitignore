@@ -1,0 +1,11 @@
+__pycache__
+*.pyc
+
+*.cache/
+*.idea/
+*.egg-info
+*.ipynb_checkpoints/
+*/test_warehouse/.ipynb_checkpoints
+*.DS_Store
+*.egg-info
+*.txt
