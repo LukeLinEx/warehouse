@@ -1,4 +1,4 @@
-import sys
+import subprocess
 import time
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
@@ -50,7 +50,8 @@ class Handler(FileSystemEventHandler):
             if keys[-1] != "end":
                 print("Received created event - {}.".format(keys))
             else:
-                sys.exit()
+                # sys.exit()
+                subprocess.call(['python', './kill.py'])
 
 
 
